@@ -1,0 +1,15 @@
+POST
+http://127.0.0.1:5000/doctor/insert
+Body->Raw->JSON:
+{
+    "doc_id": "doc999",
+    "doc_name": "doc-999"
+}
+
+POST
+http://127.0.0.1:5000/hospital/insert
+Body->Raw->JSON:
+{
+    "hosp_id": "hosp999",
+    "hosp_name": "hosp-999"
+}

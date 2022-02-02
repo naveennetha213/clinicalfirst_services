@@ -1,0 +1,23 @@
+POST
+http://127.0.0.1:5000/eqp_cat/insert
+Body->Raw->JSON:
+{
+    "cat_id": "cat999",
+    "cat_name": "category-999"
+}
+
+POST
+http://127.0.0.1:5000/eqp_type/insert
+Body->Raw->JSON:
+{
+    "type_id": "type999",
+    "type_name": "type-999"
+}
+
+POST
+http://127.0.0.1:5000/eqp_recommendation/insert
+Body->Raw->JSON:
+{
+    "rec_id": "rec999",
+    "rec_name": "rec-999"
+}

@@ -1,0 +1,41 @@
+SignUp:-
+POST
+http://127.0.0.1:5000/user/insert
+Body->Raw->JSON:
+{
+    "username": "Raghu",
+    "email": "raghu@gmail.com",
+    "phone": "9394113857",
+    "password": "Raghu@123"
+}
+
+Login:-
+POST
+http://127.0.0.1:5000/user/login
+Body->Raw->JSON:
+{
+    "email": "raghu@gmail.com",
+    "password": "Raghu@123"
+}
+
+Token Validate:-
+GET
+http://127.0.0.1:5000/user/logined
+headers:-
+KEY:               VALUE:
+x-access-token     paste token value here
+
+Logout:-
+GET
+http://127.0.0.1:5000/user/logout
+
+
+
+
+
+
+
+
+
+
+
